@@ -8,9 +8,9 @@ public class BookingModel {
     private String reserveName;
     private LocalDate checkIn;
     private LocalDate checkOut;
-    private int numberGuest;
+    private String numberGuest;
 
-    public BookingModel(String id, String reserveName, LocalDate checkIn, LocalDate checkOut, int numberGuest) {
+    public BookingModel(String id, String reserveName, LocalDate checkIn, LocalDate checkOut, String numberGuest) {
         this.id = id;
         this.reserveName = reserveName;
         this.checkIn = checkIn;
@@ -50,11 +50,11 @@ public class BookingModel {
         this.checkOut = checkOut;
     }
 
-    public int getNumberGuest() {
+    public String getNumberGuest() {
         return numberGuest;
     }
 
-    public void setNumberGuest(int numberGuest) {
+    public void setNumberGuest(String numberGuest) {
         this.numberGuest = numberGuest;
     }
 }
